@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Will you go out with me?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap" role="main">
+    <div class="card">
+      <header class="header">
+        <h1 id="greeting">Hey, <span id="crushName">[Crush’s Name]</span> 💫</h1>
+        <p class="subtitle">I made this little page just for you.</p>
+      </header>
+
+      <section class="message">
+        <p id="typewriter" aria-live="polite"></p>
+      </section>
+
+      <div class="controls" id="choices" aria-hidden="false">
+        <button id="yesBtn" class="btn yes" aria-label="Yes">Yes 💚</button>
+        <button id="noBtn" class="btn no" aria-label="No">No 💙</button>
+      </div>
+
+      <div id="result" class="result" aria-live="polite"></div>
+
+      <footer class="foot">
+        <small>Made with a little courage by <span id="yourName">[Your Name]</span></small>
+      </footer>
+    </div>
+
+    <!-- Confetti container -->
+    <div id="confetti"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
